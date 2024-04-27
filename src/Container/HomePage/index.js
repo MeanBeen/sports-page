@@ -1,24 +1,23 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Layout, Image, Divider, Button, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
-import UiSelection from "../UISelection";
 
 const { Content } = Layout;
-const { Title } = Typography;
+// const { Title } = Typography;
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const [selectedButton, setSelectedButton] = useState(null);
+  // const [selectedButton, setSelectedButton] = useState(null);
 
-  const handleAFLButtonClick = () => {
-    setSelectedButton("AFL");
-    navigate("/ui", { state: { selectedButton: "AFL" } });
-  };
+  // const handleAFLButtonClick = () => {
+  //   setSelectedButton("AFL");
+  //   navigate("/ui", { state: { selectedButton: "AFL" } });
+  // };
 
-  const handleNRLButtonClick = () => {
-    setSelectedButton("NRL");
-    navigate("/ui", { state: { selectedButton: "NRL" } });
-  };
+  // const handleNRLButtonClick = () => {
+  //   setSelectedButton("NRL");
+  //   navigate("/ui", { state: { selectedButton: "NRL" } });
+  // };
   return (
     <Content>
       <Content style={{ position: "relative", display: "inline-block" }}>
@@ -28,7 +27,7 @@ const HomePage = () => {
           src="https://thelongwalk.com.au/cdn/shop/products/IMG_3950_360x.jpg?v=1652767534"
         />
         <Button
-          onClick={() => handleAFLButtonClick()}
+          onClick={() => navigate("/aflui")}
           style={{
             position: "absolute",
             top: 150,
@@ -56,7 +55,7 @@ const HomePage = () => {
           src="https://cdn4.theroar.com.au/wp-content/uploads/2019/10/NRL-Steeden-Generic-768x525.jpg"
         />
         <Button
-          onClick={() => handleNRLButtonClick()}
+          onClick={() => navigate("/nrlui")}
           style={{
             position: "absolute",
             top: 150,

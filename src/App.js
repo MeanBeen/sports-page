@@ -3,7 +3,11 @@ import { Layout } from "antd";
 import HomePage from "./Container/HomePage";
 import GlobalStyle from "./globalStyles";
 import { Route, Routes } from "react-router-dom";
-import UiSelection from "./Container/UISelection";
+
+import AflUi from "./Container/UISelection/AflUi";
+import NrlUi from "./Container/UISelection/NrlUi";
+import AflScore from "./Container/ScorePage/AflScore";
+import NrlScore from "./Container/ScorePage/NrlScore";
 
 const { Content } = Layout;
 
@@ -14,7 +18,10 @@ const App = () => {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="homepage" element={<HomePage />} />
-        <Route path="ui" element={<UiSelection />} />
+        <Route path="aflui" element={<AflUi />} />
+        <Route path="nrlui" element={<NrlUi />} />
+        <Route path="aflscore" element={<AflScore />} />
+        <Route path="nrlscore" element={<NrlScore />} />
       </Routes>
     </Content>
   );
