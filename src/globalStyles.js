@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background-color: #dee2e6;
   }
 `;
 
