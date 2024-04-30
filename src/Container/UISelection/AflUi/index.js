@@ -13,7 +13,7 @@ const AflUi = () => {
 
   return (
     <Content>
-      <Title level={2}>Select a AFL Field</Title>
+      <Title level={2}>Select an AFL Field</Title>
       <Content style={{ display: "inline-block" }}>
         <Title level={3}>Customizable Field</Title>
 
