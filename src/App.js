@@ -8,6 +8,7 @@ import AflUi from "./Container/UISelection/AflUi";
 import NrlUi from "./Container/UISelection/NrlUi";
 import AflScore from "./Container/ScorePage/AflScore";
 import NrlScore from "./Container/ScorePage/NrlScore";
+import AflField from "./Container/CustomField/AflField";
 
 const { Content } = Layout;
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="nrlui" element={<NrlUi />} />
         <Route path="aflscore" element={<AflScore />} />
         <Route path="nrlscore" element={<NrlScore />} />
+        <Route path="aflfield" element={<AflField />} />
       </Routes>
     </Content>
   );

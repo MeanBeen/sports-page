@@ -21,6 +21,7 @@ const AflUi = () => {
           width={400}
           height={440}
           preview={false}
+          onClick={() => navigate("/aflfield")}
           src="https://cdn.imgbin.com/1/4/7/imgbin-melbourne-cricket-ground-australian-football-league-melbourne-football-club-adelaide-football-club-australian-rules-football-football-play-diagram-template-bgQ2ysbNNYGkseeenu6D8wAjt.jpg"
           // src={
           //   selectedButton === "AFL"
